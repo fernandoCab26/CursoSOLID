@@ -14,7 +14,7 @@ namespace ProcesadorDeEventos
         {
             _creadorMensaje = mensajeTiempo;
         }
-        public string CompararFechas(DateTime date)
+        public string CompararFechaActual(DateTime date)
         {
             if( date== DateTime.MinValue)
             {

@@ -9,7 +9,7 @@ namespace ProcesadorDeEventos
     {
         public DateTime ConvertirFecha(string fecha)
         {
-            DateTime date = new DateTime();
+            DateTime date;
             try
             {
                 date = Convert.ToDateTime(fecha);

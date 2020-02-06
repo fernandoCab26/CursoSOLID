@@ -6,6 +6,6 @@ namespace ProcesadorDeEventos.Interfaces
 {
     public interface IComparadorFechas
     {
-        string CompararFechas(DateTime date);
+        string CompararFechaActual(DateTime date);
     }
 }

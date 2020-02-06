@@ -1,6 +1,7 @@
 ﻿using ProcesadorDeEventos.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace ProcesadorDeEventos
@@ -24,7 +25,7 @@ namespace ProcesadorDeEventos
                 int counter = 0;
                 string line;
 
-                System.IO.StreamReader file = _lectorArchivos.GetReader();
+                StreamReader file = _lectorArchivos.GetReader();
 
                 while ((line = file.ReadLine()) != null)
                 {
@@ -54,7 +55,7 @@ namespace ProcesadorDeEventos
 
             DateTime date = _convertidorFechas.ConvertirFecha(fecha);
 
-            return string.Format("{0} {1}", evento.Trim() ,_comparadorFechas.CompararFechas(date));
+            return string.Format("{0} {1}", evento.Trim() ,_comparadorFechas.CompararFechaActual(date));
         }
 
     }
