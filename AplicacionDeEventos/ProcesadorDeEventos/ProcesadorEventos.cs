@@ -21,28 +21,40 @@ namespace ProcesadorDeEventos
 
         public void ProcesarEventos()
         {
-            int counter = 0;
-            string line;
+                int counter = 0;
+                string line;
 
-            System.IO.StreamReader file = _lectorArchivos.GetReader();
+                System.IO.StreamReader file = _lectorArchivos.GetReader();
 
-            while ((line = file.ReadLine()) != null)
-            {
-                string[] splitLine = line.Split(',');
-                string evento = splitLine[0];
-                string fecha = splitLine[1];
+                while ((line = file.ReadLine()) != null)
+                {
+                    try
+                    {
 
-                Console.WriteLine( CrearMensaje(fecha, evento));
+                        string[] splitLine = line.Split(',');
+                        string evento = splitLine[0];
+                        string fecha = splitLine[1];
 
-                counter++;
-            }
+                        Console.WriteLine(CrearMensaje(fecha, evento));
+
+
+                        counter++;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Ha ocurrido un error:" + ex.Message);
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                }
+
         }
         protected  string CrearMensaje(string fecha, string evento)
         {
 
             DateTime date = _convertidorFechas.ConvertirFecha(fecha);
 
-            return evento.Trim() + " " +_comparadorFechas.CompararFechas(date);
+            return string.Format("{0} {1}", evento.Trim() ,_comparadorFechas.CompararFechas(date));
         }
 
     }

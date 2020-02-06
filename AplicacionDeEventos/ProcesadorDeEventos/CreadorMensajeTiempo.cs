@@ -10,8 +10,6 @@ namespace ProcesadorDeEventos
         public string CrearMensajeTiempo(DateTime date, DateTime hoy)
         {
             string mensajeTiempo = string.Empty;
-
-
             int difMinutos = Math.Abs((date - hoy).Minutes);
             int difHoras = Math.Abs((date - hoy).Hours);
             int difDias = Math.Abs((date - hoy).Days);
@@ -19,19 +17,19 @@ namespace ProcesadorDeEventos
 
             if (difMinutos < 60)
             {
-                mensajeTiempo = $" { difMinutos} minutos.";
+                mensajeTiempo = $"{ difMinutos} minutos.";
             }
             if (difHoras < 24 && difHoras != 0)
             {
-                mensajeTiempo = $" { difHoras} horas.";
+                mensajeTiempo = $"{ difHoras} horas.";
             }
             if (difDias < 30 && difDias != 0)
             {
-                mensajeTiempo = $" { difDias} días.";
+                mensajeTiempo = $"{ difDias} días.";
             }
             if (difMeses != 0)
             {
-                mensajeTiempo = $" {difMeses} meses.";
+                mensajeTiempo = $"{difMeses} meses.";
             }
 
             return mensajeTiempo;
