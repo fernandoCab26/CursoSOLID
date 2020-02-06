@@ -8,13 +8,13 @@ namespace ProcesadorDeEventos
     {
         private const string Ocurrio = "ocurrió hace";
         private const string Ocurrira = "ocurrirá en";
-        private const string RutaEventos = @"C:\Users\fernando.cab\Desktop\Eventos.txt";
+        private string RutaEventos = AppDomain.CurrentDomain.BaseDirectory +"Eventos.txt";
         public void ProcesarEvento()
         {
             int counter = 0;
             string line;
 
-            System.IO.StreamReader file = new System.IO.StreamReader(RutaEventos);
+            System.IO.StreamReader file = new System.IO.StreamReader(@RutaEventos);
 
             while ((line = file.ReadLine()) != null)
             {
