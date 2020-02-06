@@ -1,4 +1,6 @@
-﻿using ProcesadorDeEventos;
+﻿using Microsoft.Extensions.DependencyInjection;
+using ProcesadorDeEventos;
+using ProcesadorDeEventos.Interfaces;
 using System;
 
 namespace AplicacionDeEventos
@@ -8,8 +10,23 @@ namespace AplicacionDeEventos
 
         static void Main(string[] args)
         {
-            ProcesadorEventos procesador = new ProcesadorEventos();
-            procesador.ProcesarEvento();
+            IProcesadorEventos procesador = CrearDependencias().GetService<IProcesadorEventos>();
+
+            procesador.ProcesarEventos();
+        }
+
+        protected static IServiceProvider CrearDependencias()
+        {
+            //setup our DI
+            IServiceProvider serviceProvider = new ServiceCollection()
+                .AddSingleton<IComparadorFechas, ComparadorFechas>()
+                .AddSingleton<IConvertidorFechas, ConvertidorFechas>()
+                .AddSingleton<ILectorArchivos, LectorArchivos>()
+                .AddSingleton<ICreadorMensajeTiempo, CreadorMensajeTiempo>()
+                .AddSingleton<IProcesadorEventos, ProcesadorEventos>()
+                .BuildServiceProvider();
+
+            return serviceProvider;
         }
     }
 }

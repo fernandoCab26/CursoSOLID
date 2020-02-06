@@ -12,3 +12,5 @@ C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\D
 C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\ProcesadorDeEventos.dll
 C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\ProcesadorDeEventos.pdb
 C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\Debug\netcoreapp3.1\AplicacionDeEventos.csproj.CopyComplete
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
