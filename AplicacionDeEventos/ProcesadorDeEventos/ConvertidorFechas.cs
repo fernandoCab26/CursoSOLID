@@ -17,7 +17,7 @@ namespace ProcesadorDeEventos
             }
             catch (Exception ex)
             {
-                throw new Exception("El formato de fecha es incorrecto: " + ex.Message);
+                throw new ArgumentException("El formato de fecha es incorrecto: " + ex.Message);
             }
 
             return date;

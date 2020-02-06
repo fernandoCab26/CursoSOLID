@@ -9,6 +9,15 @@ namespace ProcesadorDeEventos
     {
         public string CrearMensajeTiempo(DateTime date, DateTime hoy)
         {
+            if (date == DateTime.MinValue)
+            {
+                throw new ArgumentException("El formato de fecha es inválido");
+            }
+            if (hoy == DateTime.MinValue)
+            {
+                throw new ArgumentException("El formato de fecha es inválido");
+            }
+
             string mensajeTiempo = string.Empty;
             int difMinutos = Math.Abs((date - hoy).Minutes);
             int difHoras = Math.Abs((date - hoy).Hours);

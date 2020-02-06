@@ -16,6 +16,10 @@ namespace ProcesadorDeEventos
         }
         public string CompararFechas(DateTime date)
         {
+            if( date== DateTime.MinValue)
+            {
+                throw new ArgumentException("El formato de fecha es inválido");
+            }
             string mensajeTiempo = string.Empty;
             DateTime hoy = DateTime.Now;
 
