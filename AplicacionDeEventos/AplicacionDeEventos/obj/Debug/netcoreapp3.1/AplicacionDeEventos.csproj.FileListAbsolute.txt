@@ -1,0 +1,14 @@
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\AplicacionDeEventos.exe
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\AplicacionDeEventos.deps.json
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\AplicacionDeEventos.runtimeconfig.json
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\AplicacionDeEventos.runtimeconfig.dev.json
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\AplicacionDeEventos.dll
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\AplicacionDeEventos.pdb
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\Debug\netcoreapp3.1\AplicacionDeEventos.csprojAssemblyReference.cache
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\Debug\netcoreapp3.1\AplicacionDeEventos.AssemblyInfoInputs.cache
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\Debug\netcoreapp3.1\AplicacionDeEventos.AssemblyInfo.cs
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\Debug\netcoreapp3.1\AplicacionDeEventos.dll
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\Debug\netcoreapp3.1\AplicacionDeEventos.pdb
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\ProcesadorDeEventos.dll
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\bin\Debug\netcoreapp3.1\ProcesadorDeEventos.pdb
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\AplicacionDeEventos\obj\Debug\netcoreapp3.1\AplicacionDeEventos.csproj.CopyComplete

@@ -1,0 +1,93 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ProcesadorDeEventos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ProcesadorDeEventos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProcesadorDeEventos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProcesadorDeEventos/1.0.0": {
+      "type": "project",
+      "path": "../ProcesadorDeEventos/ProcesadorDeEventos.csproj",
+      "msbuildProject": "../ProcesadorDeEventos/ProcesadorDeEventos.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "ProcesadorDeEventos >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\fernando.cab\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\fernando.cab\\source\\repos\\AplicacionDeEventos\\AplicacionDeEventos\\AplicacionDeEventos.csproj",
+      "projectName": "AplicacionDeEventos",
+      "projectPath": "C:\\Users\\fernando.cab\\source\\repos\\AplicacionDeEventos\\AplicacionDeEventos\\AplicacionDeEventos.csproj",
+      "packagesPath": "C:\\Users\\fernando.cab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fernando.cab\\source\\repos\\AplicacionDeEventos\\AplicacionDeEventos\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\fernando.cab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://bot-apps-dev01/Nugets/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\fernando.cab\\source\\repos\\AplicacionDeEventos\\ProcesadorDeEventos\\ProcesadorDeEventos.csproj": {
+              "projectPath": "C:\\Users\\fernando.cab\\source\\repos\\AplicacionDeEventos\\ProcesadorDeEventos\\ProcesadorDeEventos.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

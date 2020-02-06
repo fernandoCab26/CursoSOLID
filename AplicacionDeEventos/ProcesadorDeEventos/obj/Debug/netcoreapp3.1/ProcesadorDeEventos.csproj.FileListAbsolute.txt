@@ -1,0 +1,8 @@
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\bin\Debug\netcoreapp3.1\ProcesadorDeEventos.deps.json
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\bin\Debug\netcoreapp3.1\ProcesadorDeEventos.dll
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\bin\Debug\netcoreapp3.1\ProcesadorDeEventos.pdb
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\obj\Debug\netcoreapp3.1\ProcesadorDeEventos.csprojAssemblyReference.cache
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\obj\Debug\netcoreapp3.1\ProcesadorDeEventos.AssemblyInfoInputs.cache
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\obj\Debug\netcoreapp3.1\ProcesadorDeEventos.AssemblyInfo.cs
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\obj\Debug\netcoreapp3.1\ProcesadorDeEventos.dll
+C:\Users\fernando.cab\source\repos\AplicacionDeEventos\ProcesadorDeEventos\obj\Debug\netcoreapp3.1\ProcesadorDeEventos.pdb
