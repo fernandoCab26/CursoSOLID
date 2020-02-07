@@ -6,6 +6,6 @@ namespace ProcesadorDeEventos.Interfaces
 {
     public interface IProcesadorEventos
     {
-        void ProcesarEventos();
+        List<string> ProcesarEventos();
     }
 }

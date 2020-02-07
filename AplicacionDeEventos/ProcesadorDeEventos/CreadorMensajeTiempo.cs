@@ -32,7 +32,7 @@ namespace ProcesadorDeEventos
             {
                 mensajeTiempo = $"{ difHoras} horas.";
             }
-            if (difDias < 30 && difDias != 0)
+            if (difDias <= 30 && difDias != 0)
             {
                 mensajeTiempo = $"{ difDias} días.";
             }

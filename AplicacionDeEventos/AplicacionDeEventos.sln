@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacionDeEventos", "AplicacionDeEventos\AplicacionDeEventos.csproj", "{4E71AB26-5FE4-4B02-8846-AE5B25325C9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AplicacionDeEventos", "AplicacionDeEventos\AplicacionDeEventos.csproj", "{4E71AB26-5FE4-4B02-8846-AE5B25325C9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcesadorDeEventos", "ProcesadorDeEventos\ProcesadorDeEventos.csproj", "{09EEC750-F1A7-4F03-BA29-FA55E3527AB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcesadorDeEventos", "ProcesadorDeEventos\ProcesadorDeEventos.csproj", "{09EEC750-F1A7-4F03-BA29-FA55E3527AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcesadorDeEventosTests", "ProcesadorDeEventosTests\ProcesadorDeEventosTests.csproj", "{143944FC-49E2-4B2B-B85B-ABD99640385D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{09EEC750-F1A7-4F03-BA29-FA55E3527AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09EEC750-F1A7-4F03-BA29-FA55E3527AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09EEC750-F1A7-4F03-BA29-FA55E3527AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143944FC-49E2-4B2B-B85B-ABD99640385D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143944FC-49E2-4B2B-B85B-ABD99640385D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143944FC-49E2-4B2B-B85B-ABD99640385D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143944FC-49E2-4B2B-B85B-ABD99640385D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

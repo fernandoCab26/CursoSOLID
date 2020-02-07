@@ -10,9 +10,22 @@ namespace AplicacionDeEventos
 
         static void Main(string[] args)
         {
-            IProcesadorEventos procesador = CrearDependencias().GetService<IProcesadorEventos>();
+            try
+            {
+                IProcesadorEventos procesador = CrearDependencias().GetService<IProcesadorEventos>();
 
-            procesador.ProcesarEventos();
+                foreach (string mensaje in procesador.ProcesarEventos())
+                {
+                    Console.WriteLine(mensaje);   
+                }
+                
+            }
+            catch(Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Ha ocurrido un error:" + ex.Message);
+                Console.ForegroundColor = ConsoleColor.White;
+            }
         }
 
         protected static IServiceProvider CrearDependencias()

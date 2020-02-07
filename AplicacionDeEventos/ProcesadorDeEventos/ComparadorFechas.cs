@@ -27,16 +27,12 @@ namespace ProcesadorDeEventos
 
             if (comparator < 0)
             {
-                mensajeTiempo =  string.Format("{0},{1}", Ocurrio, _creadorMensaje.CrearMensajeTiempo(date, hoy));
-            }
-            else if (comparator == 0)
-            {
-                //la fecha es igual
+                mensajeTiempo =  string.Format("{0} {1}", Ocurrio, _creadorMensaje.CrearMensajeTiempo(date, hoy));
             }
             else
             {
 
-                mensajeTiempo = string.Format("{0}{1}", Ocurrira , _creadorMensaje. CrearMensajeTiempo(date, hoy));
+                mensajeTiempo = string.Format("{0} {1}", Ocurrira , _creadorMensaje. CrearMensajeTiempo(date, hoy));
             }
 
             return mensajeTiempo;

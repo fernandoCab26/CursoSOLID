@@ -7,6 +7,6 @@ namespace ProcesadorDeEventos.Interfaces
 {
    public interface ILectorArchivos
     {
-        StreamReader GetReader();
+        string[] ObtenerContenido();
     }
 }

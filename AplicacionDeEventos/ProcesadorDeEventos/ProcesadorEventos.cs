@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace ProcesadorDeEventos
 {
@@ -20,42 +19,31 @@ namespace ProcesadorDeEventos
             _convertidorFechas = convertidorFechas;
         }
 
-        public void ProcesarEventos()
+        public List<string> ProcesarEventos()
         {
-                int counter = 0;
-                string line;
+            List<string> mensajes = new List<string>();
+            string[] contenido = _lectorArchivos.ObtenerContenido();
 
-                StreamReader file = _lectorArchivos.GetReader();
+            foreach (string linea in contenido)
+            {
+                if (!string.IsNullOrWhiteSpace(linea))
+                { 
+                    string[] splitLine = linea.Split(',');
+                    string evento = splitLine[0];
+                    string fecha = splitLine[1];
 
-                while ((line = file.ReadLine()) != null)
-                {
-                    try
-                    {
-
-                        string[] splitLine = line.Split(',');
-                        string evento = splitLine[0];
-                        string fecha = splitLine[1];
-
-                        Console.WriteLine(CrearMensaje(fecha, evento));
-
-
-                        counter++;
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Ha ocurrido un error:" + ex.Message);
-                    Console.ForegroundColor = ConsoleColor.White;
+                    mensajes.Add(CrearMensaje(fecha, evento));
                 }
-                }
+            }
 
+            return mensajes;
         }
-        protected  string CrearMensaje(string fecha, string evento)
+        protected string CrearMensaje(string fecha, string evento)
         {
 
             DateTime date = _convertidorFechas.ConvertirFecha(fecha);
 
-            return string.Format("{0} {1}", evento.Trim() ,_comparadorFechas.CompararFechaActual(date));
+            return string.Format("{0} {1}", evento.Trim(), _comparadorFechas.CompararFechaActual(date));
         }
 
     }

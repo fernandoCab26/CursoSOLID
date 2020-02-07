@@ -7,9 +7,14 @@ namespace ProcesadorDeEventos
     public class LectorArchivos : ILectorArchivos
     {
         private string RutaEventos = AppDomain.CurrentDomain.BaseDirectory + "Eventos.txt";
-        public StreamReader GetReader()
+
+        public string[] ObtenerContenido()
         {
-            return new StreamReader(@RutaEventos);
+            StreamReader file = new StreamReader(RutaEventos);
+            var fileContent = file.ReadToEnd().Split(Environment.NewLine,
+                              StringSplitOptions.RemoveEmptyEntries);
+
+            return fileContent;
         }
     }
 }
